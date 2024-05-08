@@ -1,0 +1,26 @@
+[0m12:58:46.897831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec307e98e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec307e8620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec307e8cb0>]}
+
+
+============================== 12:58:46.904923 | 7779af20-0281-4e56-a8b5-abc9267a30d8 ==============================
+[0m12:58:46.904923 [info ] [MainThread]: Running with dbt=1.7.14
+[0m12:58:46.906094 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/workspace/DBT-Hackathon-2024', 'log_path': '/workspace/DBT-Hackathon-2024/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m12:58:48.695973 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "Hackathon", target "Snowflake_DB" invalid: ['database name'] is not of type 'string'
+[0m12:58:48.698741 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 1.8961539, "process_user_time": 5.378174, "process_kernel_time": 0.562553, "process_mem_max_rss": "188144", "process_in_blocks": "144992", "process_out_blocks": "16", "command_success": false}
+[0m12:58:48.700671 [debug] [MainThread]: Command `dbt run` failed at 12:58:48.700257 after 1.90 seconds
+[0m12:58:48.702046 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec30b8ef60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec070d5820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7febfb6c6360>]}
+[0m12:58:48.703232 [debug] [MainThread]: Flushing usage events
+[0m12:59:03.422940 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2f4984ec90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2f4984e2a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2f4984e750>]}
+
+
+============================== 12:59:03.428529 | b01dc653-bfc6-4f53-b646-d9f6ab211d72 ==============================
+[0m12:59:03.428529 [info ] [MainThread]: Running with dbt=1.7.14
+[0m12:59:03.429725 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/workspace/DBT-Hackathon-2024', 'log_path': '/workspace/DBT-Hackathon-2024/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt test', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m12:59:04.648912 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "Hackathon", target "Snowflake_DB" invalid: ['database name'] is not of type 'string'
+[0m12:59:04.650638 [debug] [MainThread]: Resource report: {"command_name": "test", "command_wall_clock_time": 1.4865787, "process_user_time": 4.521916, "process_kernel_time": 1.270424, "process_mem_max_rss": "187984", "process_in_blocks": "180936", "process_out_blocks": "8", "command_success": false}
+[0m12:59:04.651781 [debug] [MainThread]: Command `dbt test` failed at 12:59:04.651442 after 1.49 seconds
+[0m12:59:04.652657 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2f18ab7380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2f1abac3b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2f49760ad0>]}
+[0m12:59:04.653384 [debug] [MainThread]: Flushing usage events
