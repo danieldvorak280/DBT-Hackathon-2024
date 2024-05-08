@@ -1,4 +1,4 @@
-{% macro add_timezone_columns(table_name, timezone='Europe/Prague') %}
+{# {% macro add_timezone_columns(table_name, timezone='Europe/Prague') %}
     {%- set target_table = ref(table_name) -%}
     
     {# Query to fetch all column names except "ID" from the target table #}
@@ -40,3 +40,4 @@
 {% endmacro %}
 
 
+#}

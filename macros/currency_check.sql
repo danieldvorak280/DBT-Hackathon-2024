@@ -1,4 +1,4 @@
-{% macro remove_id_column(columns) %}
+{#{% macro remove_id_column(columns) %}
     {%- set filtered_columns = [] -%}
     {%- for col in columns -%}
         {%- if col.name.lower() != 'id' -%}
@@ -44,3 +44,4 @@
     {%- endif -%}
 {% endmacro %}
 
+#}

@@ -1,2 +1,2 @@
-{{ config(materialized='table') }}
-{{ add_timezone_columns("PIZZA_CUSTOMERS") }}
+{#{{ config(materialized='table') }}
+{{ add_timezone_columns("PIZZA_CUSTOMERS") }}#}

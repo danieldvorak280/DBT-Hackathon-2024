@@ -604,3 +604,1560 @@ Compilation Error
 [0m16:16:34.853911 [debug] [MainThread]: Command `dbt run` failed at 16:16:34.853691 after 1.21 seconds
 [0m16:16:34.854536 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1627a77a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa12d28a7e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa15e436c30>]}
 [0m16:16:34.855205 [debug] [MainThread]: Flushing usage events
+[0m16:18:03.407632 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f930325a210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9303871f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9303566510>]}
+
+
+============================== 16:18:03.411245 | 455a4981-4e28-46f6-81e8-efc479fc0ca0 ==============================
+[0m16:18:03.411245 [info ] [MainThread]: Running with dbt=1.7.14
+[0m16:18:03.412093 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/workspace/DBT-Hackathon-2024', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/workspace/DBT-Hackathon-2024/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --select PIZZA_CUSTOMERS', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:18:04.305943 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '455a4981-4e28-46f6-81e8-efc479fc0ca0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92cdf63770>]}
+[0m16:18:04.376857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '455a4981-4e28-46f6-81e8-efc479fc0ca0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92ceadd580>]}
+[0m16:18:04.377951 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m16:18:04.386832 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m16:18:04.413926 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m16:18:04.414790 [debug] [MainThread]: Partial parsing: updated file: Revolt_BI_Hackathon://models/pizza/PIZZA_CUSTOMERS.sql
+[0m16:18:04.591128 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS' (models/pizza/PIZZA_CUSTOMERS.sql) depends on a node named 'HACKATHON.TEAM_01.PIZZA_CUSTOMERS' which was not found
+[0m16:18:04.592651 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 1.2352004, "process_user_time": 3.399779, "process_kernel_time": 0.663956, "process_mem_max_rss": "194740", "process_out_blocks": "8", "command_success": false, "process_in_blocks": "0"}
+[0m16:18:04.593565 [debug] [MainThread]: Command `dbt run` failed at 16:18:04.593330 after 1.24 seconds
+[0m16:18:04.594243 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9304248da0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92cde47080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92cdddd970>]}
+[0m16:18:04.594945 [debug] [MainThread]: Flushing usage events
+[0m16:21:23.620735 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f659e114170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f659e116fc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f659e114710>]}
+
+
+============================== 16:21:23.624431 | 03107938-dac0-4e70-ad28-18f3e3089401 ==============================
+[0m16:21:23.624431 [info ] [MainThread]: Running with dbt=1.7.14
+[0m16:21:23.625229 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/workspace/DBT-Hackathon-2024', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/workspace/DBT-Hackathon-2024/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:21:24.486465 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '03107938-dac0-4e70-ad28-18f3e3089401', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f656cd25760>]}
+[0m16:21:24.557255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '03107938-dac0-4e70-ad28-18f3e3089401', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f656e1c0740>]}
+[0m16:21:24.558400 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m16:21:24.568842 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m16:21:24.596455 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:21:24.597070 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:21:24.603716 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '03107938-dac0-4e70-ad28-18f3e3089401', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f656cdcac30>]}
+[0m16:21:24.613139 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '03107938-dac0-4e70-ad28-18f3e3089401', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f656cc4eff0>]}
+[0m16:21:24.613816 [info ] [MainThread]: Found 7 models, 5 sources, 0 exposures, 0 metrics, 435 macros, 0 groups, 0 semantic models
+[0m16:21:24.614431 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '03107938-dac0-4e70-ad28-18f3e3089401', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f656f598b60>]}
+[0m16:21:24.616891 [info ] [MainThread]: 
+[0m16:21:24.617957 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:21:24.620168 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_HACKATHON'
+[0m16:21:24.636285 [debug] [ThreadPool]: Using snowflake connection "list_HACKATHON"
+[0m16:21:24.636884 [debug] [ThreadPool]: On list_HACKATHON: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "connection_name": "list_HACKATHON"} */
+show terse schemas in database "HACKATHON"
+    limit 10000
+[0m16:21:24.637425 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:21:25.201119 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m16:21:25.203308 [debug] [ThreadPool]: On list_HACKATHON: Close
+[0m16:21:25.263310 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_HACKATHON, now list_HACKATHON_TEAM_01)
+[0m16:21:25.273446 [debug] [ThreadPool]: Using snowflake connection "list_HACKATHON_TEAM_01"
+[0m16:21:25.274128 [debug] [ThreadPool]: On list_HACKATHON_TEAM_01: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "connection_name": "list_HACKATHON_TEAM_01"} */
+show terse objects in "HACKATHON"."TEAM_01" limit 10000
+[0m16:21:25.274723 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:21:25.613061 [debug] [ThreadPool]: SQL status: SUCCESS 14 in 0.0 seconds
+[0m16:21:25.615916 [debug] [ThreadPool]: On list_HACKATHON_TEAM_01: Close
+[0m16:21:25.685268 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '03107938-dac0-4e70-ad28-18f3e3089401', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f656cb8e480>]}
+[0m16:21:25.686383 [info ] [MainThread]: Concurrency: 1 threads (target='Snowflake_DB')
+[0m16:21:25.687152 [info ] [MainThread]: 
+[0m16:21:25.691069 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS
+[0m16:21:25.692097 [info ] [Thread-1 (]: 1 of 7 START sql table model TEAM_01.PIZZA_CUSTOMERS ........................... [RUN]
+[0m16:21:25.693097 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_HACKATHON_TEAM_01, now model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS)
+[0m16:21:25.693751 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS
+[0m16:21:25.708563 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS"
+[0m16:21:25.709629 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS (compile): 16:21:25.694163 => 16:21:25.709234
+[0m16:21:25.710251 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS
+[0m16:21:25.744870 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS"
+[0m16:21:25.746107 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS"
+[0m16:21:25.746744 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_CUSTOMERS"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:21:25.747349 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:21:26.429191 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:21:26.455477 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS (execute): 16:21:25.710643 => 16:21:26.455101
+[0m16:21:26.456158 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS: Close
+[0m16:21:26.521829 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '03107938-dac0-4e70-ad28-18f3e3089401', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f656c21afc0>]}
+[0m16:21:26.522891 [info ] [Thread-1 (]: 1 of 7 OK created sql table model TEAM_01.PIZZA_CUSTOMERS ...................... [[32mSUCCESS 1[0m in 0.83s]
+[0m16:21:26.523813 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS
+[0m16:21:26.524656 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES
+[0m16:21:26.525506 [info ] [Thread-1 (]: 2 of 7 START sql table model TEAM_01.PIZZA_MARKETING_EXPENDITURES .............. [RUN]
+[0m16:21:26.526755 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS, now model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES)
+[0m16:21:26.527696 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES
+[0m16:21:26.531778 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES"
+[0m16:21:26.532850 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES (compile): 16:21:26.528200 => 16:21:26.532458
+[0m16:21:26.533493 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES
+[0m16:21:26.538675 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES"
+[0m16:21:26.540369 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES"
+[0m16:21:26.541356 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_MARKETING_EXPENDITURES"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:21:26.542316 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:21:27.279936 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:21:27.283216 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES (execute): 16:21:26.535879 => 16:21:27.282886
+[0m16:21:27.283843 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES: Close
+[0m16:21:27.344547 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '03107938-dac0-4e70-ad28-18f3e3089401', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f656c26fd40>]}
+[0m16:21:27.345471 [info ] [Thread-1 (]: 2 of 7 OK created sql table model TEAM_01.PIZZA_MARKETING_EXPENDITURES ......... [[32mSUCCESS 1[0m in 0.82s]
+[0m16:21:27.346665 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES
+[0m16:21:27.347766 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_ORDERS
+[0m16:21:27.348910 [info ] [Thread-1 (]: 3 of 7 START sql table model TEAM_01.PIZZA_ORDERS .............................. [RUN]
+[0m16:21:27.350357 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES, now model.Revolt_BI_Hackathon.PIZZA_ORDERS)
+[0m16:21:27.351202 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_ORDERS
+[0m16:21:27.355159 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_ORDERS"
+[0m16:21:27.356192 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDERS (compile): 16:21:27.351644 => 16:21:27.355800
+[0m16:21:27.356828 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_ORDERS
+[0m16:21:27.359876 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_ORDERS"
+[0m16:21:27.360927 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_ORDERS"
+[0m16:21:27.361592 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDERS: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_ORDERS"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_ORDERS"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:21:27.362517 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:21:28.378231 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:21:28.381488 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDERS (execute): 16:21:27.357222 => 16:21:28.381174
+[0m16:21:28.382107 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDERS: Close
+[0m16:21:28.445883 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '03107938-dac0-4e70-ad28-18f3e3089401', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f656c26fa70>]}
+[0m16:21:28.446944 [info ] [Thread-1 (]: 3 of 7 OK created sql table model TEAM_01.PIZZA_ORDERS ......................... [[32mSUCCESS 1[0m in 1.10s]
+[0m16:21:28.447847 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_ORDERS
+[0m16:21:28.448524 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS
+[0m16:21:28.449292 [info ] [Thread-1 (]: 4 of 7 START sql table model TEAM_01.PIZZA_ORDER_ITEMS ......................... [RUN]
+[0m16:21:28.450225 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_ORDERS, now model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS)
+[0m16:21:28.450850 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS
+[0m16:21:28.454604 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS"
+[0m16:21:28.455836 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS (compile): 16:21:28.451245 => 16:21:28.455412
+[0m16:21:28.456506 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS
+[0m16:21:28.459511 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS"
+[0m16:21:28.460577 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS"
+[0m16:21:28.461204 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_ORDER_ITEMS"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:21:28.461790 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:21:29.057740 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:21:29.061014 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS (execute): 16:21:28.456901 => 16:21:29.060680
+[0m16:21:29.061673 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS: Close
+[0m16:21:29.119979 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '03107938-dac0-4e70-ad28-18f3e3089401', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f656c2196a0>]}
+[0m16:21:29.121000 [info ] [Thread-1 (]: 4 of 7 OK created sql table model TEAM_01.PIZZA_ORDER_ITEMS .................... [[32mSUCCESS 1[0m in 0.67s]
+[0m16:21:29.121904 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS
+[0m16:21:29.122605 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS
+[0m16:21:29.123468 [info ] [Thread-1 (]: 5 of 7 START sql table model TEAM_01.PIZZA_ORDER_ITEM_TOPPINGS ................. [RUN]
+[0m16:21:29.124435 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS, now model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS)
+[0m16:21:29.125038 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS
+[0m16:21:29.128941 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS"
+[0m16:21:29.130174 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS (compile): 16:21:29.125442 => 16:21:29.129712
+[0m16:21:29.130842 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS
+[0m16:21:29.133890 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS"
+[0m16:21:29.134996 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS"
+[0m16:21:29.135634 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_ORDER_ITEM_TOPPINGS"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:21:29.136305 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:21:29.741359 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:21:29.744715 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS (execute): 16:21:29.131238 => 16:21:29.744382
+[0m16:21:29.745377 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS: Close
+[0m16:21:29.802531 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '03107938-dac0-4e70-ad28-18f3e3089401', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f656c2196a0>]}
+[0m16:21:29.803477 [info ] [Thread-1 (]: 5 of 7 OK created sql table model TEAM_01.PIZZA_ORDER_ITEM_TOPPINGS ............ [[32mSUCCESS 1[0m in 0.68s]
+[0m16:21:29.804352 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS
+[0m16:21:29.805030 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.add_timezone
+[0m16:21:29.805806 [info ] [Thread-1 (]: 6 of 7 START sql table model TEAM_01.add_timezone .............................. [RUN]
+[0m16:21:29.806770 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS, now model.Revolt_BI_Hackathon.add_timezone)
+[0m16:21:29.807395 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.add_timezone
+[0m16:21:29.814753 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.add_timezone"
+[0m16:21:29.815403 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.add_timezone: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.add_timezone"} */
+SELECT 
+            column_name 
+        FROM 
+            information_schema.columns
+        WHERE 
+            column_name != 'ID'
+[0m16:21:29.815989 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:21:30.859780 [debug] [Thread-1 (]: SQL status: SUCCESS 738 in 1.0 seconds
+[0m16:21:30.866595 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.add_timezone"
+[0m16:21:30.867296 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.add_timezone: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.add_timezone"} */
+SELECT 
+            column_name 
+        FROM 
+            information_schema.columns
+        WHERE 
+            data_type = 'Timestamp_NTZ'
+[0m16:21:31.745904 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 1.0 seconds
+[0m16:21:31.748051 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.add_timezone"
+[0m16:21:31.749158 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.add_timezone (compile): 16:21:29.807795 => 16:21:31.748776
+[0m16:21:31.749857 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.add_timezone
+[0m16:21:31.753845 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.add_timezone"
+[0m16:21:31.755010 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.add_timezone"
+[0m16:21:31.755686 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.add_timezone: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.add_timezone"} */
+create or replace transient table "HACKATHON"."TEAM_01"."add_timezone"
+         as
+        (
+
+
+    -- Execute the query to get the list of columns except "ID"
+
+    -- Execute the query to get the list of timestamp columns-- Define the base SELECT statement with existing columns
+    SELECT 
+        * 
+    FROM 
+        "HACKATHON"."TEAM_01"."PIZZA_CUSTOMERS"
+    
+    
+
+        );
+[0m16:21:32.407526 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:21:32.410782 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.add_timezone (execute): 16:21:31.750289 => 16:21:32.410400
+[0m16:21:32.411478 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.add_timezone: Close
+[0m16:21:32.475181 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '03107938-dac0-4e70-ad28-18f3e3089401', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f656c2df890>]}
+[0m16:21:32.476193 [info ] [Thread-1 (]: 6 of 7 OK created sql table model TEAM_01.add_timezone ......................... [[32mSUCCESS 1[0m in 2.67s]
+[0m16:21:32.477117 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.add_timezone
+[0m16:21:32.477835 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.currency_check
+[0m16:21:32.478733 [info ] [Thread-1 (]: 7 of 7 START sql table model TEAM_01.currency_check ............................ [RUN]
+[0m16:21:32.479737 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.add_timezone, now model.Revolt_BI_Hackathon.currency_check)
+[0m16:21:32.480352 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.currency_check
+[0m16:21:32.498375 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.currency_check"
+[0m16:21:32.499112 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.currency_check: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.currency_check"} */
+describe table "HACKATHON"."TEAM_01"."PIZZA_CUSTOMERS"
+[0m16:21:32.499713 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:21:32.791483 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:21:32.796700 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.currency_check"
+[0m16:21:32.797729 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.currency_check (compile): 16:21:32.480743 => 16:21:32.797347
+[0m16:21:32.798449 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.currency_check
+[0m16:21:32.801896 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.currency_check"
+[0m16:21:32.802985 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.currency_check"
+[0m16:21:32.803633 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.currency_check: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.currency_check"} */
+create or replace transient table "HACKATHON"."TEAM_01"."currency_check"
+         as
+        (
+-- depends_on: "HACKATHON"."TEAM_01"."PIZZA_CUSTOMERS"
+SELECT
+                ERROR_MESSAGE
+,
+                'None' AS Currency
+            FROM "HACKATHON"."TEAM_01"."PIZZA_CUSTOMERS"
+        );
+[0m16:21:33.299537 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:21:33.302640 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.currency_check (execute): 16:21:32.798921 => 16:21:33.302302
+[0m16:21:33.303353 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.currency_check: Close
+[0m16:21:33.370435 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '03107938-dac0-4e70-ad28-18f3e3089401', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f656c2d57c0>]}
+[0m16:21:33.371439 [info ] [Thread-1 (]: 7 of 7 OK created sql table model TEAM_01.currency_check ....................... [[32mSUCCESS 1[0m in 0.89s]
+[0m16:21:33.372431 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.currency_check
+[0m16:21:33.374691 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:21:33.375344 [debug] [MainThread]: Connection 'model.Revolt_BI_Hackathon.currency_check' was properly closed.
+[0m16:21:33.375947 [info ] [MainThread]: 
+[0m16:21:33.376553 [info ] [MainThread]: Finished running 7 table models in 0 hours 0 minutes and 8.76 seconds (8.76s).
+[0m16:21:33.378415 [debug] [MainThread]: Command end result
+[0m16:21:33.386914 [info ] [MainThread]: 
+[0m16:21:33.387565 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:21:33.388142 [info ] [MainThread]: 
+[0m16:21:33.388718 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 TOTAL=7
+[0m16:21:33.389848 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 9.81941, "process_user_time": 3.880787, "process_kernel_time": 0.679437, "process_mem_max_rss": "199436", "process_in_blocks": "184", "process_out_blocks": "2840"}
+[0m16:21:33.390638 [debug] [MainThread]: Command `dbt run` succeeded at 16:21:33.390427 after 9.82 seconds
+[0m16:21:33.391260 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f656d90e210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f659e1174d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f659e114170>]}
+[0m16:21:33.391849 [debug] [MainThread]: Flushing usage events
+[0m16:23:31.788889 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95caf4cd40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95cb175ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95cafe3980>]}
+
+
+============================== 16:23:31.792448 | 2a15cf32-ed02-4bc2-9cc2-74b1cacd627a ==============================
+[0m16:23:31.792448 [info ] [MainThread]: Running with dbt=1.7.14
+[0m16:23:31.793280 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/workspace/DBT-Hackathon-2024', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/workspace/DBT-Hackathon-2024/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run --select PIZZA_CUSTOMERS', 'send_anonymous_usage_stats': 'True'}
+[0m16:23:32.741837 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2a15cf32-ed02-4bc2-9cc2-74b1cacd627a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95cb936330>]}
+[0m16:23:32.812309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2a15cf32-ed02-4bc2-9cc2-74b1cacd627a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9599944920>]}
+[0m16:23:32.813385 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m16:23:32.822424 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m16:23:32.849837 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:23:32.850469 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:23:32.857110 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2a15cf32-ed02-4bc2-9cc2-74b1cacd627a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f959a834860>]}
+[0m16:23:32.866524 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2a15cf32-ed02-4bc2-9cc2-74b1cacd627a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95996ab260>]}
+[0m16:23:32.867235 [info ] [MainThread]: Found 7 models, 5 sources, 0 exposures, 0 metrics, 435 macros, 0 groups, 0 semantic models
+[0m16:23:32.867850 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2a15cf32-ed02-4bc2-9cc2-74b1cacd627a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9599fc4710>]}
+[0m16:23:32.869782 [info ] [MainThread]: 
+[0m16:23:32.870864 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:23:32.872408 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_HACKATHON'
+[0m16:23:32.888307 [debug] [ThreadPool]: Using snowflake connection "list_HACKATHON"
+[0m16:23:32.889013 [debug] [ThreadPool]: On list_HACKATHON: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "connection_name": "list_HACKATHON"} */
+show terse schemas in database "HACKATHON"
+    limit 10000
+[0m16:23:32.889588 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:23:33.217567 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.0 seconds
+[0m16:23:33.219759 [debug] [ThreadPool]: On list_HACKATHON: Close
+[0m16:23:33.285998 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_HACKATHON, now list_HACKATHON_TEAM_01)
+[0m16:23:33.296056 [debug] [ThreadPool]: Using snowflake connection "list_HACKATHON_TEAM_01"
+[0m16:23:33.296698 [debug] [ThreadPool]: On list_HACKATHON_TEAM_01: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "connection_name": "list_HACKATHON_TEAM_01"} */
+show terse objects in "HACKATHON"."TEAM_01" limit 10000
+[0m16:23:33.297255 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:23:33.605680 [debug] [ThreadPool]: SQL status: SUCCESS 16 in 0.0 seconds
+[0m16:23:33.608656 [debug] [ThreadPool]: On list_HACKATHON_TEAM_01: Close
+[0m16:23:33.677323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2a15cf32-ed02-4bc2-9cc2-74b1cacd627a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9599ee5100>]}
+[0m16:23:33.678431 [info ] [MainThread]: Concurrency: 1 threads (target='Snowflake_DB')
+[0m16:23:33.679085 [info ] [MainThread]: 
+[0m16:23:33.681758 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS
+[0m16:23:33.682612 [info ] [Thread-1 (]: 1 of 1 START sql table model TEAM_01.PIZZA_CUSTOMERS ........................... [RUN]
+[0m16:23:33.683638 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_HACKATHON_TEAM_01, now model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS)
+[0m16:23:33.684262 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS
+[0m16:23:33.698300 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS"
+[0m16:23:33.699368 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS (compile): 16:23:33.684658 => 16:23:33.698967
+[0m16:23:33.699977 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS
+[0m16:23:33.733178 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS"
+[0m16:23:33.734259 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS"
+[0m16:23:33.734909 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_CUSTOMERS"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:23:33.735521 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:23:34.440524 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:23:34.468323 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS (execute): 16:23:33.700376 => 16:23:34.467953
+[0m16:23:34.469061 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS: Close
+[0m16:23:34.569701 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2a15cf32-ed02-4bc2-9cc2-74b1cacd627a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f959985d9a0>]}
+[0m16:23:34.570827 [info ] [Thread-1 (]: 1 of 1 OK created sql table model TEAM_01.PIZZA_CUSTOMERS ...................... [[32mSUCCESS 1[0m in 0.89s]
+[0m16:23:34.571814 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS
+[0m16:23:34.574762 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:23:34.575485 [debug] [MainThread]: Connection 'model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS' was properly closed.
+[0m16:23:34.576081 [info ] [MainThread]: 
+[0m16:23:34.576803 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 1.71 seconds (1.71s).
+[0m16:23:34.577885 [debug] [MainThread]: Command end result
+[0m16:23:34.587273 [info ] [MainThread]: 
+[0m16:23:34.588025 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:23:34.588649 [info ] [MainThread]: 
+[0m16:23:34.589302 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m16:23:34.590552 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 2.8516986, "process_user_time": 3.558098, "process_kernel_time": 0.666641, "process_mem_max_rss": "199284", "process_out_blocks": "1872", "process_in_blocks": "0"}
+[0m16:23:34.591538 [debug] [MainThread]: Command `dbt run` succeeded at 16:23:34.591315 after 2.85 seconds
+[0m16:23:34.592145 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95cb0fa1e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f959a664440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95cb1d79b0>]}
+[0m16:23:34.592758 [debug] [MainThread]: Flushing usage events
+[0m16:25:05.224448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0ca875760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0ca876180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0ca875cd0>]}
+
+
+============================== 16:25:05.228039 | a1308fc2-5440-4443-9770-83092a6f0ff1 ==============================
+[0m16:25:05.228039 [info ] [MainThread]: Running with dbt=1.7.14
+[0m16:25:05.228855 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/workspace/DBT-Hackathon-2024', 'log_path': '/workspace/DBT-Hackathon-2024/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:25:06.135116 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a1308fc2-5440-4443-9770-83092a6f0ff1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb09943e930>]}
+[0m16:25:06.206587 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a1308fc2-5440-4443-9770-83092a6f0ff1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb09bb96b40>]}
+[0m16:25:06.207695 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m16:25:06.216220 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m16:25:06.243835 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:25:06.244448 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:25:06.251081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a1308fc2-5440-4443-9770-83092a6f0ff1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0ca875fd0>]}
+[0m16:25:06.260492 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a1308fc2-5440-4443-9770-83092a6f0ff1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb09935fa40>]}
+[0m16:25:06.261178 [info ] [MainThread]: Found 7 models, 5 sources, 0 exposures, 0 metrics, 435 macros, 0 groups, 0 semantic models
+[0m16:25:06.261836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a1308fc2-5440-4443-9770-83092a6f0ff1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb099746570>]}
+[0m16:25:06.264307 [info ] [MainThread]: 
+[0m16:25:06.265590 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:25:06.267918 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_HACKATHON'
+[0m16:25:06.284468 [debug] [ThreadPool]: Using snowflake connection "list_HACKATHON"
+[0m16:25:06.285086 [debug] [ThreadPool]: On list_HACKATHON: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "connection_name": "list_HACKATHON"} */
+show terse schemas in database "HACKATHON"
+    limit 10000
+[0m16:25:06.285627 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:25:06.604146 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.0 seconds
+[0m16:25:06.606378 [debug] [ThreadPool]: On list_HACKATHON: Close
+[0m16:25:06.669879 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_HACKATHON, now list_HACKATHON_TEAM_01)
+[0m16:25:06.679860 [debug] [ThreadPool]: Using snowflake connection "list_HACKATHON_TEAM_01"
+[0m16:25:06.680480 [debug] [ThreadPool]: On list_HACKATHON_TEAM_01: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "connection_name": "list_HACKATHON_TEAM_01"} */
+show terse objects in "HACKATHON"."TEAM_01" limit 10000
+[0m16:25:06.681022 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:25:06.989959 [debug] [ThreadPool]: SQL status: SUCCESS 16 in 0.0 seconds
+[0m16:25:06.993023 [debug] [ThreadPool]: On list_HACKATHON_TEAM_01: Close
+[0m16:25:07.062848 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a1308fc2-5440-4443-9770-83092a6f0ff1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb09aa2f440>]}
+[0m16:25:07.063960 [info ] [MainThread]: Concurrency: 1 threads (target='Snowflake_DB')
+[0m16:25:07.064691 [info ] [MainThread]: 
+[0m16:25:07.067711 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS
+[0m16:25:07.068560 [info ] [Thread-1 (]: 1 of 7 START sql table model TEAM_01.PIZZA_CUSTOMERS ........................... [RUN]
+[0m16:25:07.069542 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_HACKATHON_TEAM_01, now model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS)
+[0m16:25:07.070162 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS
+[0m16:25:07.085371 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS"
+[0m16:25:07.086467 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS (compile): 16:25:07.070578 => 16:25:07.086064
+[0m16:25:07.087150 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS
+[0m16:25:07.121482 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS"
+[0m16:25:07.122594 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS"
+[0m16:25:07.123275 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_CUSTOMERS"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:25:07.123889 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:25:07.858431 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:25:07.885248 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS (execute): 16:25:07.087552 => 16:25:07.884844
+[0m16:25:07.885984 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS: Close
+[0m16:25:07.948442 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a1308fc2-5440-4443-9770-83092a6f0ff1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb09a749c40>]}
+[0m16:25:07.949566 [info ] [Thread-1 (]: 1 of 7 OK created sql table model TEAM_01.PIZZA_CUSTOMERS ...................... [[32mSUCCESS 1[0m in 0.88s]
+[0m16:25:07.950562 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS
+[0m16:25:07.951325 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES
+[0m16:25:07.952350 [info ] [Thread-1 (]: 2 of 7 START sql table model TEAM_01.PIZZA_MARKETING_EXPENDITURES .............. [RUN]
+[0m16:25:07.953369 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS, now model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES)
+[0m16:25:07.953985 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES
+[0m16:25:07.957756 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES"
+[0m16:25:07.958840 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES (compile): 16:25:07.954378 => 16:25:07.958435
+[0m16:25:07.959468 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES
+[0m16:25:07.964639 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES"
+[0m16:25:07.965745 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES"
+[0m16:25:07.966420 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_MARKETING_EXPENDITURES"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:25:07.967047 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:25:08.635524 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:25:08.639030 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES (execute): 16:25:07.960245 => 16:25:08.638659
+[0m16:25:08.639730 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES: Close
+[0m16:25:08.700220 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a1308fc2-5440-4443-9770-83092a6f0ff1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb08af32480>]}
+[0m16:25:08.701217 [info ] [Thread-1 (]: 2 of 7 OK created sql table model TEAM_01.PIZZA_MARKETING_EXPENDITURES ......... [[32mSUCCESS 1[0m in 0.75s]
+[0m16:25:08.702185 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES
+[0m16:25:08.702932 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_ORDERS
+[0m16:25:08.703791 [info ] [Thread-1 (]: 3 of 7 START sql table model TEAM_01.PIZZA_ORDERS .............................. [RUN]
+[0m16:25:08.704844 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES, now model.Revolt_BI_Hackathon.PIZZA_ORDERS)
+[0m16:25:08.705603 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_ORDERS
+[0m16:25:08.709730 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_ORDERS"
+[0m16:25:08.710855 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDERS (compile): 16:25:08.706084 => 16:25:08.710396
+[0m16:25:08.711500 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_ORDERS
+[0m16:25:08.715190 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_ORDERS"
+[0m16:25:08.716378 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_ORDERS"
+[0m16:25:08.717012 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDERS: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_ORDERS"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_ORDERS"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:25:08.717676 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:25:09.332738 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:25:09.336174 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDERS (execute): 16:25:08.711922 => 16:25:09.335835
+[0m16:25:09.336860 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDERS: Close
+[0m16:25:09.400881 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a1308fc2-5440-4443-9770-83092a6f0ff1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb08af0f080>]}
+[0m16:25:09.401785 [info ] [Thread-1 (]: 3 of 7 OK created sql table model TEAM_01.PIZZA_ORDERS ......................... [[32mSUCCESS 1[0m in 0.70s]
+[0m16:25:09.402776 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_ORDERS
+[0m16:25:09.403535 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS
+[0m16:25:09.404328 [info ] [Thread-1 (]: 4 of 7 START sql table model TEAM_01.PIZZA_ORDER_ITEMS ......................... [RUN]
+[0m16:25:09.405310 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_ORDERS, now model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS)
+[0m16:25:09.405967 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS
+[0m16:25:09.409957 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS"
+[0m16:25:09.411083 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS (compile): 16:25:09.406374 => 16:25:09.410617
+[0m16:25:09.411708 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS
+[0m16:25:09.414837 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS"
+[0m16:25:09.415923 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS"
+[0m16:25:09.416579 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_ORDER_ITEMS"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:25:09.417185 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:25:10.089154 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:25:10.092482 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS (execute): 16:25:09.412117 => 16:25:10.092157
+[0m16:25:10.093135 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS: Close
+[0m16:25:10.152843 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a1308fc2-5440-4443-9770-83092a6f0ff1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb08af5c290>]}
+[0m16:25:10.153776 [info ] [Thread-1 (]: 4 of 7 OK created sql table model TEAM_01.PIZZA_ORDER_ITEMS .................... [[32mSUCCESS 1[0m in 0.75s]
+[0m16:25:10.154747 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS
+[0m16:25:10.155453 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS
+[0m16:25:10.156240 [info ] [Thread-1 (]: 5 of 7 START sql table model TEAM_01.PIZZA_ORDER_ITEM_TOPPINGS ................. [RUN]
+[0m16:25:10.157246 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS, now model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS)
+[0m16:25:10.158034 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS
+[0m16:25:10.161910 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS"
+[0m16:25:10.163010 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS (compile): 16:25:10.158445 => 16:25:10.162557
+[0m16:25:10.163635 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS
+[0m16:25:10.166569 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS"
+[0m16:25:10.167686 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS"
+[0m16:25:10.168314 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_ORDER_ITEM_TOPPINGS"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:25:10.168896 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:25:10.908330 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:25:10.911775 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS (execute): 16:25:10.164019 => 16:25:10.911453
+[0m16:25:10.912429 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS: Close
+[0m16:25:10.991121 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a1308fc2-5440-4443-9770-83092a6f0ff1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb08af6e660>]}
+[0m16:25:10.992129 [info ] [Thread-1 (]: 5 of 7 OK created sql table model TEAM_01.PIZZA_ORDER_ITEM_TOPPINGS ............ [[32mSUCCESS 1[0m in 0.83s]
+[0m16:25:10.993093 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS
+[0m16:25:10.993771 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.add_timezone
+[0m16:25:10.994570 [info ] [Thread-1 (]: 6 of 7 START sql table model TEAM_01.add_timezone .............................. [RUN]
+[0m16:25:10.995658 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS, now model.Revolt_BI_Hackathon.add_timezone)
+[0m16:25:10.996271 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.add_timezone
+[0m16:25:11.003743 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.add_timezone"
+[0m16:25:11.004420 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.add_timezone: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.add_timezone"} */
+SELECT 
+            column_name 
+        FROM 
+            information_schema.columns
+        WHERE 
+            column_name != 'ID'
+[0m16:25:11.005013 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:25:12.077712 [debug] [Thread-1 (]: SQL status: SUCCESS 741 in 1.0 seconds
+[0m16:25:12.083971 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.add_timezone"
+[0m16:25:12.084627 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.add_timezone: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.add_timezone"} */
+SELECT 
+            column_name 
+        FROM 
+            information_schema.columns
+        WHERE 
+            data_type = 'Timestamp_NTZ'
+[0m16:25:12.940034 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 1.0 seconds
+[0m16:25:12.942053 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.add_timezone"
+[0m16:25:12.943226 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.add_timezone (compile): 16:25:10.996658 => 16:25:12.942827
+[0m16:25:12.943886 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.add_timezone
+[0m16:25:12.947636 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.add_timezone"
+[0m16:25:12.948788 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.add_timezone"
+[0m16:25:12.949442 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.add_timezone: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.add_timezone"} */
+create or replace transient table "HACKATHON"."TEAM_01"."add_timezone"
+         as
+        (
+
+
+    -- Execute the query to get the list of columns except "ID"
+
+    -- Execute the query to get the list of timestamp columns-- Define the base SELECT statement with existing columns
+    SELECT 
+        * 
+    FROM 
+        "HACKATHON"."TEAM_01"."PIZZA_CUSTOMERS"
+    
+    
+
+        );
+[0m16:25:13.558819 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:25:13.562159 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.add_timezone (execute): 16:25:12.944290 => 16:25:13.561814
+[0m16:25:13.562856 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.add_timezone: Close
+[0m16:25:13.620262 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a1308fc2-5440-4443-9770-83092a6f0ff1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb08af33b00>]}
+[0m16:25:13.621265 [info ] [Thread-1 (]: 6 of 7 OK created sql table model TEAM_01.add_timezone ......................... [[32mSUCCESS 1[0m in 2.62s]
+[0m16:25:13.622219 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.add_timezone
+[0m16:25:13.622961 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.currency_check
+[0m16:25:13.623844 [info ] [Thread-1 (]: 7 of 7 START sql table model TEAM_01.currency_check ............................ [RUN]
+[0m16:25:13.624912 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.add_timezone, now model.Revolt_BI_Hackathon.currency_check)
+[0m16:25:13.625580 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.currency_check
+[0m16:25:13.643270 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.currency_check"
+[0m16:25:13.643902 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.currency_check: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.currency_check"} */
+describe table "HACKATHON"."TEAM_01"."PIZZA_CUSTOMERS"
+[0m16:25:13.644498 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:25:13.935835 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:25:13.941420 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.currency_check"
+[0m16:25:13.942590 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.currency_check (compile): 16:25:13.626062 => 16:25:13.942161
+[0m16:25:13.943314 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.currency_check
+[0m16:25:13.946839 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.currency_check"
+[0m16:25:13.948016 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.currency_check"
+[0m16:25:13.948650 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.currency_check: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.currency_check"} */
+create or replace transient table "HACKATHON"."TEAM_01"."currency_check"
+         as
+        (
+-- depends_on: "HACKATHON"."TEAM_01"."PIZZA_CUSTOMERS"
+SELECT
+                ERROR_MESSAGE
+,
+                'None' AS Currency
+            FROM "HACKATHON"."TEAM_01"."PIZZA_CUSTOMERS"
+        );
+[0m16:25:14.555974 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:25:14.559263 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.currency_check (execute): 16:25:13.943729 => 16:25:14.558939
+[0m16:25:14.559925 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.currency_check: Close
+[0m16:25:14.624275 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a1308fc2-5440-4443-9770-83092a6f0ff1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb08afa4200>]}
+[0m16:25:14.625285 [info ] [Thread-1 (]: 7 of 7 OK created sql table model TEAM_01.currency_check ....................... [[32mSUCCESS 1[0m in 1.00s]
+[0m16:25:14.626230 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.currency_check
+[0m16:25:14.628705 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:25:14.629279 [debug] [MainThread]: Connection 'model.Revolt_BI_Hackathon.currency_check' was properly closed.
+[0m16:25:14.629872 [info ] [MainThread]: 
+[0m16:25:14.630534 [info ] [MainThread]: Finished running 7 table models in 0 hours 0 minutes and 8.36 seconds (8.36s).
+[0m16:25:14.632585 [debug] [MainThread]: Command end result
+[0m16:25:14.641284 [info ] [MainThread]: 
+[0m16:25:14.641947 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:25:14.642528 [info ] [MainThread]: 
+[0m16:25:14.643173 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 TOTAL=7
+[0m16:25:14.644327 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 9.470831, "process_user_time": 3.858321, "process_kernel_time": 0.621663, "process_mem_max_rss": "199668", "process_out_blocks": "2032", "process_in_blocks": "0"}
+[0m16:25:14.645132 [debug] [MainThread]: Command `dbt run` succeeded at 16:25:14.644901 after 9.47 seconds
+[0m16:25:14.645726 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0ce9ef770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0ca6ee600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0cab42b70>]}
+[0m16:25:14.646325 [debug] [MainThread]: Flushing usage events
+[0m16:26:50.777247 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4774de570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa477a2b7a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa479685c70>]}
+
+
+============================== 16:26:50.780631 | 87b15129-1889-4baf-9962-4bafd4995253 ==============================
+[0m16:26:50.780631 [info ] [MainThread]: Running with dbt=1.7.14
+[0m16:26:50.781416 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/workspace/DBT-Hackathon-2024/logs', 'profiles_dir': '/workspace/DBT-Hackathon-2024', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt run', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:26:51.702889 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '87b15129-1889-4baf-9962-4bafd4995253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa44878bec0>]}
+[0m16:26:51.776642 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '87b15129-1889-4baf-9962-4bafd4995253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4422604a0>]}
+[0m16:26:51.777874 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m16:26:51.787385 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m16:26:51.816506 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:26:51.817216 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:26:51.824914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '87b15129-1889-4baf-9962-4bafd4995253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa442d92ba0>]}
+[0m16:26:51.834810 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '87b15129-1889-4baf-9962-4bafd4995253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa441fbf200>]}
+[0m16:26:51.835559 [info ] [MainThread]: Found 7 models, 5 sources, 0 exposures, 0 metrics, 435 macros, 0 groups, 0 semantic models
+[0m16:26:51.836210 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '87b15129-1889-4baf-9962-4bafd4995253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa44343a840>]}
+[0m16:26:51.838919 [info ] [MainThread]: 
+[0m16:26:51.840079 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:26:51.842073 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_HACKATHON'
+[0m16:26:51.858795 [debug] [ThreadPool]: Using snowflake connection "list_HACKATHON"
+[0m16:26:51.859544 [debug] [ThreadPool]: On list_HACKATHON: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "connection_name": "list_HACKATHON"} */
+show terse schemas in database "HACKATHON"
+    limit 10000
+[0m16:26:51.860125 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:26:52.207755 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.0 seconds
+[0m16:26:52.210378 [debug] [ThreadPool]: On list_HACKATHON: Close
+[0m16:26:52.291052 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_HACKATHON, now list_HACKATHON_TEAM_01)
+[0m16:26:52.301989 [debug] [ThreadPool]: Using snowflake connection "list_HACKATHON_TEAM_01"
+[0m16:26:52.302726 [debug] [ThreadPool]: On list_HACKATHON_TEAM_01: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "connection_name": "list_HACKATHON_TEAM_01"} */
+show terse objects in "HACKATHON"."TEAM_01" limit 10000
+[0m16:26:52.303307 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:26:52.545958 [debug] [ThreadPool]: SQL status: SUCCESS 16 in 0.0 seconds
+[0m16:26:52.548831 [debug] [ThreadPool]: On list_HACKATHON_TEAM_01: Close
+[0m16:26:52.615857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '87b15129-1889-4baf-9962-4bafd4995253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa473966450>]}
+[0m16:26:52.616955 [info ] [MainThread]: Concurrency: 1 threads (target='Snowflake_DB')
+[0m16:26:52.617559 [info ] [MainThread]: 
+[0m16:26:52.620667 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS
+[0m16:26:52.621632 [info ] [Thread-1 (]: 1 of 7 START sql table model TEAM_01.PIZZA_CUSTOMERS ........................... [RUN]
+[0m16:26:52.622726 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_HACKATHON_TEAM_01, now model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS)
+[0m16:26:52.623351 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS
+[0m16:26:52.638090 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS"
+[0m16:26:52.639311 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS (compile): 16:26:52.623739 => 16:26:52.638896
+[0m16:26:52.639955 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS
+[0m16:26:52.674323 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS"
+[0m16:26:52.675730 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS"
+[0m16:26:52.676427 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_CUSTOMERS"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:26:52.677060 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:26:53.699129 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:26:53.726095 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS (execute): 16:26:52.640373 => 16:26:53.725748
+[0m16:26:53.726813 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS: Close
+[0m16:26:53.786970 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '87b15129-1889-4baf-9962-4bafd4995253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa441dd0770>]}
+[0m16:26:53.787976 [info ] [Thread-1 (]: 1 of 7 OK created sql table model TEAM_01.PIZZA_CUSTOMERS ...................... [[32mSUCCESS 1[0m in 1.16s]
+[0m16:26:53.789023 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS
+[0m16:26:53.789760 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES
+[0m16:26:53.790490 [info ] [Thread-1 (]: 2 of 7 START sql table model TEAM_01.PIZZA_MARKETING_EXPENDITURES .............. [RUN]
+[0m16:26:53.791729 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS, now model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES)
+[0m16:26:53.792367 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES
+[0m16:26:53.795948 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES"
+[0m16:26:53.797005 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES (compile): 16:26:53.792765 => 16:26:53.796616
+[0m16:26:53.797637 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES
+[0m16:26:53.800933 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES"
+[0m16:26:53.802015 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES"
+[0m16:26:53.804557 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_MARKETING_EXPENDITURES"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:26:53.805183 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:26:54.567476 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:26:54.570944 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES (execute): 16:26:53.798039 => 16:26:54.570555
+[0m16:26:54.571623 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES: Close
+[0m16:26:54.633850 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '87b15129-1889-4baf-9962-4bafd4995253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4403f17c0>]}
+[0m16:26:54.635012 [info ] [Thread-1 (]: 2 of 7 OK created sql table model TEAM_01.PIZZA_MARKETING_EXPENDITURES ......... [[32mSUCCESS 1[0m in 0.84s]
+[0m16:26:54.636027 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES
+[0m16:26:54.636757 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_ORDERS
+[0m16:26:54.637483 [info ] [Thread-1 (]: 3 of 7 START sql table model TEAM_01.PIZZA_ORDERS .............................. [RUN]
+[0m16:26:54.638632 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES, now model.Revolt_BI_Hackathon.PIZZA_ORDERS)
+[0m16:26:54.639297 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_ORDERS
+[0m16:26:54.643527 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_ORDERS"
+[0m16:26:54.644614 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDERS (compile): 16:26:54.639696 => 16:26:54.644220
+[0m16:26:54.645240 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_ORDERS
+[0m16:26:54.648587 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_ORDERS"
+[0m16:26:54.649754 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_ORDERS"
+[0m16:26:54.650407 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDERS: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_ORDERS"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_ORDERS"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:26:54.651041 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:26:55.452783 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:26:55.456126 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDERS (execute): 16:26:54.645635 => 16:26:55.455771
+[0m16:26:55.456762 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDERS: Close
+[0m16:26:55.518660 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '87b15129-1889-4baf-9962-4bafd4995253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4403f1850>]}
+[0m16:26:55.519706 [info ] [Thread-1 (]: 3 of 7 OK created sql table model TEAM_01.PIZZA_ORDERS ......................... [[32mSUCCESS 1[0m in 0.88s]
+[0m16:26:55.520646 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_ORDERS
+[0m16:26:55.521380 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS
+[0m16:26:55.522327 [info ] [Thread-1 (]: 4 of 7 START sql table model TEAM_01.PIZZA_ORDER_ITEMS ......................... [RUN]
+[0m16:26:55.523437 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_ORDERS, now model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS)
+[0m16:26:55.524056 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS
+[0m16:26:55.528070 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS"
+[0m16:26:55.529146 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS (compile): 16:26:55.524452 => 16:26:55.528734
+[0m16:26:55.529769 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS
+[0m16:26:55.533061 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS"
+[0m16:26:55.534190 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS"
+[0m16:26:55.534864 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_ORDER_ITEMS"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:26:55.535473 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:26:56.352717 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:26:56.356264 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS (execute): 16:26:55.530270 => 16:26:56.355900
+[0m16:26:56.356992 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS: Close
+[0m16:26:56.419154 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '87b15129-1889-4baf-9962-4bafd4995253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa441da3290>]}
+[0m16:26:56.420236 [info ] [Thread-1 (]: 4 of 7 OK created sql table model TEAM_01.PIZZA_ORDER_ITEMS .................... [[32mSUCCESS 1[0m in 0.90s]
+[0m16:26:56.421250 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS
+[0m16:26:56.421968 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS
+[0m16:26:56.422895 [info ] [Thread-1 (]: 5 of 7 START sql table model TEAM_01.PIZZA_ORDER_ITEM_TOPPINGS ................. [RUN]
+[0m16:26:56.423953 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS, now model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS)
+[0m16:26:56.424623 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS
+[0m16:26:56.429182 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS"
+[0m16:26:56.430549 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS (compile): 16:26:56.425026 => 16:26:56.430056
+[0m16:26:56.431424 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS
+[0m16:26:56.435082 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS"
+[0m16:26:56.436204 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS"
+[0m16:26:56.436829 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_ORDER_ITEM_TOPPINGS"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:26:56.437492 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:26:57.271857 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:26:57.275164 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS (execute): 16:26:56.431931 => 16:26:57.274820
+[0m16:26:57.275815 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS: Close
+[0m16:26:57.345400 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '87b15129-1889-4baf-9962-4bafd4995253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa441da3290>]}
+[0m16:26:57.346439 [info ] [Thread-1 (]: 5 of 7 OK created sql table model TEAM_01.PIZZA_ORDER_ITEM_TOPPINGS ............ [[32mSUCCESS 1[0m in 0.92s]
+[0m16:26:57.347452 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS
+[0m16:26:57.348224 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.add_timezone
+[0m16:26:57.349060 [info ] [Thread-1 (]: 6 of 7 START sql view model TEAM_01.add_timezone ............................... [RUN]
+[0m16:26:57.350059 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS, now model.Revolt_BI_Hackathon.add_timezone)
+[0m16:26:57.350678 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.add_timezone
+[0m16:26:57.353513 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.add_timezone"
+[0m16:26:57.354689 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.add_timezone (compile): 16:26:57.351131 => 16:26:57.354365
+[0m16:26:57.355344 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.add_timezone
+[0m16:26:57.373416 [debug] [Thread-1 (]: Dropping relation "HACKATHON"."TEAM_01"."add_timezone" because it is of type table
+[0m16:26:57.381299 [debug] [Thread-1 (]: Applying DROP to: "HACKATHON"."TEAM_01"."add_timezone"
+[0m16:26:57.390934 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.add_timezone"
+[0m16:26:57.391591 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.add_timezone: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.add_timezone"} */
+drop table if exists "HACKATHON"."TEAM_01"."add_timezone" cascade
+[0m16:26:57.392231 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:26:57.681326 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:26:57.696277 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.add_timezone"
+[0m16:26:57.697379 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.add_timezone"
+[0m16:26:57.698013 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.add_timezone: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.add_timezone"} */
+create or replace   view "HACKATHON"."TEAM_01"."add_timezone"
+  
+   as (
+    
+  );
+[0m16:26:57.755998 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01b431ba-0202-a849-0002-461e00178a1e
+[0m16:26:57.756826 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 5 at position 2 unexpected ')'.
+[0m16:26:57.757790 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.add_timezone (execute): 16:26:57.355772 => 16:26:57.757430
+[0m16:26:57.758580 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.add_timezone: Close
+[0m16:26:57.827337 [debug] [Thread-1 (]: Database Error in model add_timezone (models/add_timezone.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 2 unexpected ')'.
+  compiled Code at target/run/Revolt_BI_Hackathon/models/add_timezone.sql
+[0m16:26:57.828190 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '87b15129-1889-4baf-9962-4bafd4995253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa440454e00>]}
+[0m16:26:57.829089 [error] [Thread-1 (]: 6 of 7 ERROR creating sql view model TEAM_01.add_timezone ...................... [[31mERROR[0m in 0.48s]
+[0m16:26:57.829998 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.add_timezone
+[0m16:26:57.830730 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.currency_check
+[0m16:26:57.832404 [info ] [Thread-1 (]: 7 of 7 START sql view model TEAM_01.currency_check ............................. [RUN]
+[0m16:26:57.833407 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.add_timezone, now model.Revolt_BI_Hackathon.currency_check)
+[0m16:26:57.834027 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.currency_check
+[0m16:26:57.837443 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.currency_check"
+[0m16:26:57.838202 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.currency_check (compile): 16:26:57.834429 => 16:26:57.837883
+[0m16:26:57.838841 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.currency_check
+[0m16:26:57.842175 [debug] [Thread-1 (]: Dropping relation "HACKATHON"."TEAM_01"."currency_check" because it is of type table
+[0m16:26:57.845539 [debug] [Thread-1 (]: Applying DROP to: "HACKATHON"."TEAM_01"."currency_check"
+[0m16:26:57.847141 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.currency_check"
+[0m16:26:57.847818 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.currency_check: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.currency_check"} */
+drop table if exists "HACKATHON"."TEAM_01"."currency_check" cascade
+[0m16:26:57.848449 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:26:58.109739 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:26:58.112504 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.currency_check"
+[0m16:26:58.113756 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.currency_check"
+[0m16:26:58.114445 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.currency_check: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.currency_check"} */
+create or replace   view "HACKATHON"."TEAM_01"."currency_check"
+  
+   as (
+    
+  );
+[0m16:26:58.203131 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01b431ba-0202-a835-0002-461e00175ca2
+[0m16:26:58.203921 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 5 at position 2 unexpected ')'.
+[0m16:26:58.204868 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.currency_check (execute): 16:26:57.839246 => 16:26:58.204516
+[0m16:26:58.205533 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.currency_check: Close
+[0m16:26:58.271875 [debug] [Thread-1 (]: Database Error in model currency_check (models/currency_check.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 2 unexpected ')'.
+  compiled Code at target/run/Revolt_BI_Hackathon/models/currency_check.sql
+[0m16:26:58.272727 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '87b15129-1889-4baf-9962-4bafd4995253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa440457320>]}
+[0m16:26:58.273642 [error] [Thread-1 (]: 7 of 7 ERROR creating sql view model TEAM_01.currency_check .................... [[31mERROR[0m in 0.44s]
+[0m16:26:58.274555 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.currency_check
+[0m16:26:58.276963 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:26:58.277536 [debug] [MainThread]: Connection 'model.Revolt_BI_Hackathon.currency_check' was properly closed.
+[0m16:26:58.278154 [info ] [MainThread]: 
+[0m16:26:58.278917 [info ] [MainThread]: Finished running 5 table models, 2 view models in 0 hours 0 minutes and 6.44 seconds (6.44s).
+[0m16:26:58.280974 [debug] [MainThread]: Command end result
+[0m16:26:58.289586 [info ] [MainThread]: 
+[0m16:26:58.290312 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m16:26:58.291064 [info ] [MainThread]: 
+[0m16:26:58.291713 [error] [MainThread]:   Database Error in model add_timezone (models/add_timezone.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 2 unexpected ')'.
+  compiled Code at target/run/Revolt_BI_Hackathon/models/add_timezone.sql
+[0m16:26:58.292414 [info ] [MainThread]: 
+[0m16:26:58.293074 [error] [MainThread]:   Database Error in model currency_check (models/currency_check.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 2 unexpected ')'.
+  compiled Code at target/run/Revolt_BI_Hackathon/models/currency_check.sql
+[0m16:26:58.293817 [info ] [MainThread]: 
+[0m16:26:58.294878 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=2 SKIP=0 TOTAL=7
+[0m16:26:58.296258 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 7.568206, "process_user_time": 3.981454, "process_kernel_time": 0.647586, "process_mem_max_rss": "200808", "process_in_blocks": "344", "process_out_blocks": "2000", "command_success": false}
+[0m16:26:58.297069 [debug] [MainThread]: Command `dbt run` failed at 16:26:58.296852 after 7.57 seconds
+[0m16:26:58.297750 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa477ad3500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4420c26c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa44047b770>]}
+[0m16:26:58.298374 [debug] [MainThread]: Flushing usage events
+[0m16:28:18.580485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae36f022d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae37b22db0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae36f00f50>]}
+
+
+============================== 16:28:18.583868 | 3178609f-57a3-405a-bb78-47080b90ba72 ==============================
+[0m16:28:18.583868 [info ] [MainThread]: Running with dbt=1.7.14
+[0m16:28:18.584653 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/workspace/DBT-Hackathon-2024', 'log_path': '/workspace/DBT-Hackathon-2024/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:28:19.483811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3178609f-57a3-405a-bb78-47080b90ba72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae37517830>]}
+[0m16:28:19.553433 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3178609f-57a3-405a-bb78-47080b90ba72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae02e81e80>]}
+[0m16:28:19.554533 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m16:28:19.563233 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m16:28:19.590551 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:28:19.591197 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:28:19.597851 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3178609f-57a3-405a-bb78-47080b90ba72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae01a804d0>]}
+[0m16:28:19.607596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3178609f-57a3-405a-bb78-47080b90ba72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae019cf050>]}
+[0m16:28:19.608348 [info ] [MainThread]: Found 7 models, 5 sources, 0 exposures, 0 metrics, 432 macros, 0 groups, 0 semantic models
+[0m16:28:19.608986 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3178609f-57a3-405a-bb78-47080b90ba72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae01e00d70>]}
+[0m16:28:19.611491 [info ] [MainThread]: 
+[0m16:28:19.612571 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:28:19.614394 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_HACKATHON'
+[0m16:28:19.630425 [debug] [ThreadPool]: Using snowflake connection "list_HACKATHON"
+[0m16:28:19.631087 [debug] [ThreadPool]: On list_HACKATHON: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "connection_name": "list_HACKATHON"} */
+show terse schemas in database "HACKATHON"
+    limit 10000
+[0m16:28:19.631644 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:28:19.969311 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.0 seconds
+[0m16:28:19.971554 [debug] [ThreadPool]: On list_HACKATHON: Close
+[0m16:28:20.038207 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_HACKATHON, now list_HACKATHON_TEAM_01)
+[0m16:28:20.051223 [debug] [ThreadPool]: Using snowflake connection "list_HACKATHON_TEAM_01"
+[0m16:28:20.051894 [debug] [ThreadPool]: On list_HACKATHON_TEAM_01: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "connection_name": "list_HACKATHON_TEAM_01"} */
+show terse objects in "HACKATHON"."TEAM_01" limit 10000
+[0m16:28:20.052463 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:28:20.322084 [debug] [ThreadPool]: SQL status: SUCCESS 14 in 0.0 seconds
+[0m16:28:20.324700 [debug] [ThreadPool]: On list_HACKATHON_TEAM_01: Close
+[0m16:28:20.386323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3178609f-57a3-405a-bb78-47080b90ba72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae01e02d20>]}
+[0m16:28:20.387458 [info ] [MainThread]: Concurrency: 1 threads (target='Snowflake_DB')
+[0m16:28:20.388076 [info ] [MainThread]: 
+[0m16:28:20.390683 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS
+[0m16:28:20.391550 [info ] [Thread-1 (]: 1 of 7 START sql table model TEAM_01.PIZZA_CUSTOMERS ........................... [RUN]
+[0m16:28:20.392559 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_HACKATHON_TEAM_01, now model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS)
+[0m16:28:20.393209 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS
+[0m16:28:20.407741 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS"
+[0m16:28:20.408801 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS (compile): 16:28:20.393681 => 16:28:20.408402
+[0m16:28:20.409426 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS
+[0m16:28:20.443920 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS"
+[0m16:28:20.445057 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS"
+[0m16:28:20.445719 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_CUSTOMERS"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:28:20.446331 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:28:21.179607 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:28:21.205261 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS (execute): 16:28:20.409827 => 16:28:21.204908
+[0m16:28:21.205921 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS: Close
+[0m16:28:21.267658 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3178609f-57a3-405a-bb78-47080b90ba72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae017b2db0>]}
+[0m16:28:21.268555 [info ] [Thread-1 (]: 1 of 7 OK created sql table model TEAM_01.PIZZA_CUSTOMERS ...................... [[32mSUCCESS 1[0m in 0.88s]
+[0m16:28:21.269451 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS
+[0m16:28:21.270146 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES
+[0m16:28:21.271180 [info ] [Thread-1 (]: 2 of 7 START sql table model TEAM_01.PIZZA_MARKETING_EXPENDITURES .............. [RUN]
+[0m16:28:21.272127 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS, now model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES)
+[0m16:28:21.272732 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES
+[0m16:28:21.276204 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES"
+[0m16:28:21.277248 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES (compile): 16:28:21.273129 => 16:28:21.276855
+[0m16:28:21.277870 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES
+[0m16:28:21.281007 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES"
+[0m16:28:21.282093 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES"
+[0m16:28:21.284562 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_MARKETING_EXPENDITURES"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:28:21.285204 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:28:21.969360 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:28:21.972638 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES (execute): 16:28:21.278269 => 16:28:21.972311
+[0m16:28:21.973255 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES: Close
+[0m16:28:22.037435 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3178609f-57a3-405a-bb78-47080b90ba72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae005fdf70>]}
+[0m16:28:22.038329 [info ] [Thread-1 (]: 2 of 7 OK created sql table model TEAM_01.PIZZA_MARKETING_EXPENDITURES ......... [[32mSUCCESS 1[0m in 0.77s]
+[0m16:28:22.039299 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES
+[0m16:28:22.039988 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_ORDERS
+[0m16:28:22.040771 [info ] [Thread-1 (]: 3 of 7 START sql table model TEAM_01.PIZZA_ORDERS .............................. [RUN]
+[0m16:28:22.041695 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES, now model.Revolt_BI_Hackathon.PIZZA_ORDERS)
+[0m16:28:22.042310 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_ORDERS
+[0m16:28:22.046043 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_ORDERS"
+[0m16:28:22.047080 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDERS (compile): 16:28:22.042750 => 16:28:22.046670
+[0m16:28:22.047688 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_ORDERS
+[0m16:28:22.050582 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_ORDERS"
+[0m16:28:22.051683 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_ORDERS"
+[0m16:28:22.052317 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDERS: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_ORDERS"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_ORDERS"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:28:22.052963 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:28:22.749583 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:28:22.753124 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDERS (execute): 16:28:22.048075 => 16:28:22.752769
+[0m16:28:22.753794 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDERS: Close
+[0m16:28:22.809670 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3178609f-57a3-405a-bb78-47080b90ba72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae017e3020>]}
+[0m16:28:22.810599 [info ] [Thread-1 (]: 3 of 7 OK created sql table model TEAM_01.PIZZA_ORDERS ......................... [[32mSUCCESS 1[0m in 0.77s]
+[0m16:28:22.811541 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_ORDERS
+[0m16:28:22.812233 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS
+[0m16:28:22.813044 [info ] [Thread-1 (]: 4 of 7 START sql table model TEAM_01.PIZZA_ORDER_ITEMS ......................... [RUN]
+[0m16:28:22.814014 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_ORDERS, now model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS)
+[0m16:28:22.814634 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS
+[0m16:28:22.818563 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS"
+[0m16:28:22.819651 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS (compile): 16:28:22.815063 => 16:28:22.819258
+[0m16:28:22.820274 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS
+[0m16:28:22.823389 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS"
+[0m16:28:22.824468 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS"
+[0m16:28:22.825103 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_ORDER_ITEMS"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:28:22.825701 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:28:23.466595 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:28:23.470180 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS (execute): 16:28:22.820663 => 16:28:23.469839
+[0m16:28:23.470920 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS: Close
+[0m16:28:23.538602 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3178609f-57a3-405a-bb78-47080b90ba72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae017d9a30>]}
+[0m16:28:23.539632 [info ] [Thread-1 (]: 4 of 7 OK created sql table model TEAM_01.PIZZA_ORDER_ITEMS .................... [[32mSUCCESS 1[0m in 0.72s]
+[0m16:28:23.540602 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS
+[0m16:28:23.541304 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS
+[0m16:28:23.542139 [info ] [Thread-1 (]: 5 of 7 START sql table model TEAM_01.PIZZA_ORDER_ITEM_TOPPINGS ................. [RUN]
+[0m16:28:23.543231 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS, now model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS)
+[0m16:28:23.543867 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS
+[0m16:28:23.547781 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS"
+[0m16:28:23.548826 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS (compile): 16:28:23.544273 => 16:28:23.548440
+[0m16:28:23.549440 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS
+[0m16:28:23.552443 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS"
+[0m16:28:23.553526 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS"
+[0m16:28:23.554149 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_ORDER_ITEM_TOPPINGS"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:28:23.554771 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:28:24.297370 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:28:24.300835 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS (execute): 16:28:23.549821 => 16:28:24.300500
+[0m16:28:24.301508 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS: Close
+[0m16:28:24.362106 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3178609f-57a3-405a-bb78-47080b90ba72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae005fcf50>]}
+[0m16:28:24.363055 [info ] [Thread-1 (]: 5 of 7 OK created sql table model TEAM_01.PIZZA_ORDER_ITEM_TOPPINGS ............ [[32mSUCCESS 1[0m in 0.82s]
+[0m16:28:24.364052 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS
+[0m16:28:24.364731 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.add_timezone
+[0m16:28:24.365433 [info ] [Thread-1 (]: 6 of 7 START sql view model TEAM_01.add_timezone ............................... [RUN]
+[0m16:28:24.366540 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS, now model.Revolt_BI_Hackathon.add_timezone)
+[0m16:28:24.367207 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.add_timezone
+[0m16:28:24.369841 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.add_timezone"
+[0m16:28:24.371010 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.add_timezone (compile): 16:28:24.367605 => 16:28:24.370261
+[0m16:28:24.371642 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.add_timezone
+[0m16:28:24.397426 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.add_timezone"
+[0m16:28:24.398521 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.add_timezone"
+[0m16:28:24.399216 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.add_timezone: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.add_timezone"} */
+create or replace   view "HACKATHON"."TEAM_01"."add_timezone"
+  
+   as (
+    
+  );
+[0m16:28:24.399826 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:28:24.690311 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01b431bc-0202-a835-0002-461e00175d02
+[0m16:28:24.691184 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 5 at position 2 unexpected ')'.
+[0m16:28:24.692121 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.add_timezone (execute): 16:28:24.372041 => 16:28:24.691765
+[0m16:28:24.692758 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.add_timezone: Close
+[0m16:28:24.756958 [debug] [Thread-1 (]: Database Error in model add_timezone (models/add_timezone.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 2 unexpected ')'.
+  compiled Code at target/run/Revolt_BI_Hackathon/models/add_timezone.sql
+[0m16:28:24.757868 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3178609f-57a3-405a-bb78-47080b90ba72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae017b3b00>]}
+[0m16:28:24.758816 [error] [Thread-1 (]: 6 of 7 ERROR creating sql view model TEAM_01.add_timezone ...................... [[31mERROR[0m in 0.39s]
+[0m16:28:24.759805 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.add_timezone
+[0m16:28:24.760520 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.currency_check
+[0m16:28:24.762104 [info ] [Thread-1 (]: 7 of 7 START sql view model TEAM_01.currency_check ............................. [RUN]
+[0m16:28:24.763145 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.add_timezone, now model.Revolt_BI_Hackathon.currency_check)
+[0m16:28:24.763765 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.currency_check
+[0m16:28:24.769051 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.currency_check"
+[0m16:28:24.769817 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.currency_check (compile): 16:28:24.764180 => 16:28:24.769490
+[0m16:28:24.770424 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.currency_check
+[0m16:28:24.773870 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.currency_check"
+[0m16:28:24.775022 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.currency_check"
+[0m16:28:24.775663 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.currency_check: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.currency_check"} */
+create or replace   view "HACKATHON"."TEAM_01"."currency_check"
+  
+   as (
+    
+  );
+[0m16:28:24.776256 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:28:25.047561 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01b431bc-0202-a84a-0002-461e0017a8ca
+[0m16:28:25.048346 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 5 at position 2 unexpected ')'.
+[0m16:28:25.049254 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.currency_check (execute): 16:28:24.770895 => 16:28:25.048908
+[0m16:28:25.049872 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.currency_check: Close
+[0m16:28:25.111830 [debug] [Thread-1 (]: Database Error in model currency_check (models/currency_check.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 2 unexpected ')'.
+  compiled Code at target/run/Revolt_BI_Hackathon/models/currency_check.sql
+[0m16:28:25.112679 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3178609f-57a3-405a-bb78-47080b90ba72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae00668bf0>]}
+[0m16:28:25.113601 [error] [Thread-1 (]: 7 of 7 ERROR creating sql view model TEAM_01.currency_check .................... [[31mERROR[0m in 0.35s]
+[0m16:28:25.114525 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.currency_check
+[0m16:28:25.116850 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:28:25.117412 [debug] [MainThread]: Connection 'model.Revolt_BI_Hackathon.currency_check' was properly closed.
+[0m16:28:25.118050 [info ] [MainThread]: 
+[0m16:28:25.118670 [info ] [MainThread]: Finished running 5 table models, 2 view models in 0 hours 0 minutes and 5.51 seconds (5.51s).
+[0m16:28:25.120682 [debug] [MainThread]: Command end result
+[0m16:28:25.129247 [info ] [MainThread]: 
+[0m16:28:25.129963 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m16:28:25.130595 [info ] [MainThread]: 
+[0m16:28:25.131254 [error] [MainThread]:   Database Error in model add_timezone (models/add_timezone.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 2 unexpected ')'.
+  compiled Code at target/run/Revolt_BI_Hackathon/models/add_timezone.sql
+[0m16:28:25.131834 [info ] [MainThread]: 
+[0m16:28:25.132409 [error] [MainThread]:   Database Error in model currency_check (models/currency_check.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 2 unexpected ')'.
+  compiled Code at target/run/Revolt_BI_Hackathon/models/currency_check.sql
+[0m16:28:25.132983 [info ] [MainThread]: 
+[0m16:28:25.133587 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=2 SKIP=0 TOTAL=7
+[0m16:28:25.134886 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 6.603846, "process_user_time": 3.72091, "process_kernel_time": 0.655455, "process_mem_max_rss": "200612", "process_out_blocks": "1976", "command_success": false, "process_in_blocks": "0"}
+[0m16:28:25.135717 [debug] [MainThread]: Command `dbt run` failed at 16:28:25.135498 after 6.60 seconds
+[0m16:28:25.136354 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae37b22db0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae3aa1f7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae39189970>]}
+[0m16:28:25.137083 [debug] [MainThread]: Flushing usage events
+[0m16:28:52.970119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9154713c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9151614320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9151616ff0>]}
+
+
+============================== 16:28:52.973396 | 4bfe5ac8-07e3-4ab6-8a7c-6b67dc5f2f48 ==============================
+[0m16:28:52.973396 [info ] [MainThread]: Running with dbt=1.7.14
+[0m16:28:52.974287 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/workspace/DBT-Hackathon-2024', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/workspace/DBT-Hackathon-2024/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:28:53.923215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4bfe5ac8-07e3-4ab6-8a7c-6b67dc5f2f48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f91204e5ca0>]}
+[0m16:28:53.993288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4bfe5ac8-07e3-4ab6-8a7c-6b67dc5f2f48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f91519bec90>]}
+[0m16:28:53.994369 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m16:28:54.002552 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m16:28:54.031987 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:28:54.032725 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:28:54.039682 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4bfe5ac8-07e3-4ab6-8a7c-6b67dc5f2f48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f912043eb70>]}
+[0m16:28:54.049197 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4bfe5ac8-07e3-4ab6-8a7c-6b67dc5f2f48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f912010f4d0>]}
+[0m16:28:54.049910 [info ] [MainThread]: Found 7 models, 5 sources, 0 exposures, 0 metrics, 432 macros, 0 groups, 0 semantic models
+[0m16:28:54.050533 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4bfe5ac8-07e3-4ab6-8a7c-6b67dc5f2f48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9120ebede0>]}
+[0m16:28:54.052986 [info ] [MainThread]: 
+[0m16:28:54.054054 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:28:54.055883 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_HACKATHON'
+[0m16:28:54.071670 [debug] [ThreadPool]: Using snowflake connection "list_HACKATHON"
+[0m16:28:54.072265 [debug] [ThreadPool]: On list_HACKATHON: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "connection_name": "list_HACKATHON"} */
+show terse schemas in database "HACKATHON"
+    limit 10000
+[0m16:28:54.072813 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:28:54.389007 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.0 seconds
+[0m16:28:54.391237 [debug] [ThreadPool]: On list_HACKATHON: Close
+[0m16:28:54.456084 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_HACKATHON, now list_HACKATHON_TEAM_01)
+[0m16:28:54.466235 [debug] [ThreadPool]: Using snowflake connection "list_HACKATHON_TEAM_01"
+[0m16:28:54.466919 [debug] [ThreadPool]: On list_HACKATHON_TEAM_01: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "connection_name": "list_HACKATHON_TEAM_01"} */
+show terse objects in "HACKATHON"."TEAM_01" limit 10000
+[0m16:28:54.467519 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:28:54.783236 [debug] [ThreadPool]: SQL status: SUCCESS 14 in 0.0 seconds
+[0m16:28:54.786203 [debug] [ThreadPool]: On list_HACKATHON_TEAM_01: Close
+[0m16:28:54.851196 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4bfe5ac8-07e3-4ab6-8a7c-6b67dc5f2f48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f912015c0b0>]}
+[0m16:28:54.852315 [info ] [MainThread]: Concurrency: 1 threads (target='Snowflake_DB')
+[0m16:28:54.852925 [info ] [MainThread]: 
+[0m16:28:54.855763 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS
+[0m16:28:54.856571 [info ] [Thread-1 (]: 1 of 7 START sql table model TEAM_01.PIZZA_CUSTOMERS ........................... [RUN]
+[0m16:28:54.857552 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_HACKATHON_TEAM_01, now model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS)
+[0m16:28:54.858181 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS
+[0m16:28:54.872643 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS"
+[0m16:28:54.873689 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS (compile): 16:28:54.858585 => 16:28:54.873294
+[0m16:28:54.874318 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS
+[0m16:28:54.908677 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS"
+[0m16:28:54.909920 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS"
+[0m16:28:54.910591 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_CUSTOMERS"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:28:54.911255 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:28:55.514227 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:28:55.542069 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS (execute): 16:28:54.874756 => 16:28:55.541709
+[0m16:28:55.542836 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS: Close
+[0m16:28:55.611955 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4bfe5ac8-07e3-4ab6-8a7c-6b67dc5f2f48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f911b62c410>]}
+[0m16:28:55.613045 [info ] [Thread-1 (]: 1 of 7 OK created sql table model TEAM_01.PIZZA_CUSTOMERS ...................... [[32mSUCCESS 1[0m in 0.75s]
+[0m16:28:55.614267 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS
+[0m16:28:55.615745 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES
+[0m16:28:55.617289 [info ] [Thread-1 (]: 2 of 7 START sql table model TEAM_01.PIZZA_MARKETING_EXPENDITURES .............. [RUN]
+[0m16:28:55.618877 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS, now model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES)
+[0m16:28:55.619587 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES
+[0m16:28:55.623493 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES"
+[0m16:28:55.624609 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES (compile): 16:28:55.620001 => 16:28:55.624208
+[0m16:28:55.625234 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES
+[0m16:28:55.628534 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES"
+[0m16:28:55.629766 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES"
+[0m16:28:55.632495 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_MARKETING_EXPENDITURES"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:28:55.633138 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:28:56.280274 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:28:56.283815 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES (execute): 16:28:55.625627 => 16:28:56.283461
+[0m16:28:56.284591 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES: Close
+[0m16:28:56.355596 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4bfe5ac8-07e3-4ab6-8a7c-6b67dc5f2f48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f911b6699d0>]}
+[0m16:28:56.356587 [info ] [Thread-1 (]: 2 of 7 OK created sql table model TEAM_01.PIZZA_MARKETING_EXPENDITURES ......... [[32mSUCCESS 1[0m in 0.74s]
+[0m16:28:56.357560 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES
+[0m16:28:56.358275 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_ORDERS
+[0m16:28:56.359005 [info ] [Thread-1 (]: 3 of 7 START sql table model TEAM_01.PIZZA_ORDERS .............................. [RUN]
+[0m16:28:56.360225 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES, now model.Revolt_BI_Hackathon.PIZZA_ORDERS)
+[0m16:28:56.360905 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_ORDERS
+[0m16:28:56.365146 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_ORDERS"
+[0m16:28:56.366376 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDERS (compile): 16:28:56.361339 => 16:28:56.365941
+[0m16:28:56.367077 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_ORDERS
+[0m16:28:56.370350 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_ORDERS"
+[0m16:28:56.371515 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_ORDERS"
+[0m16:28:56.372156 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDERS: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_ORDERS"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_ORDERS"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:28:56.372742 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:28:57.006604 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:28:57.009978 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDERS (execute): 16:28:56.367482 => 16:28:57.009650
+[0m16:28:57.010618 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDERS: Close
+[0m16:28:57.074897 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4bfe5ac8-07e3-4ab6-8a7c-6b67dc5f2f48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f911b64caa0>]}
+[0m16:28:57.075844 [info ] [Thread-1 (]: 3 of 7 OK created sql table model TEAM_01.PIZZA_ORDERS ......................... [[32mSUCCESS 1[0m in 0.71s]
+[0m16:28:57.076748 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_ORDERS
+[0m16:28:57.077444 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS
+[0m16:28:57.078246 [info ] [Thread-1 (]: 4 of 7 START sql table model TEAM_01.PIZZA_ORDER_ITEMS ......................... [RUN]
+[0m16:28:57.079249 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_ORDERS, now model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS)
+[0m16:28:57.079866 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS
+[0m16:28:57.083702 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS"
+[0m16:28:57.084733 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS (compile): 16:28:57.080263 => 16:28:57.084353
+[0m16:28:57.085336 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS
+[0m16:28:57.088400 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS"
+[0m16:28:57.089445 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS"
+[0m16:28:57.090059 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_ORDER_ITEMS"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:28:57.090642 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:28:58.133847 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:28:58.138671 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS (execute): 16:28:57.085717 => 16:28:58.138192
+[0m16:28:58.139649 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS: Close
+[0m16:28:58.200152 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4bfe5ac8-07e3-4ab6-8a7c-6b67dc5f2f48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f911b646f00>]}
+[0m16:28:58.201177 [info ] [Thread-1 (]: 4 of 7 OK created sql table model TEAM_01.PIZZA_ORDER_ITEMS .................... [[32mSUCCESS 1[0m in 1.12s]
+[0m16:28:58.202151 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS
+[0m16:28:58.202910 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS
+[0m16:28:58.203793 [info ] [Thread-1 (]: 5 of 7 START sql table model TEAM_01.PIZZA_ORDER_ITEM_TOPPINGS ................. [RUN]
+[0m16:28:58.204854 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS, now model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS)
+[0m16:28:58.205485 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS
+[0m16:28:58.209568 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS"
+[0m16:28:58.210642 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS (compile): 16:28:58.205915 => 16:28:58.210248
+[0m16:28:58.211298 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS
+[0m16:28:58.214415 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS"
+[0m16:28:58.215634 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS"
+[0m16:28:58.216283 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_ORDER_ITEM_TOPPINGS"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:28:58.216894 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:28:58.859685 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:28:58.863137 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS (execute): 16:28:58.211697 => 16:28:58.862794
+[0m16:28:58.863818 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS: Close
+[0m16:28:58.927692 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4bfe5ac8-07e3-4ab6-8a7c-6b67dc5f2f48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f911b6bbef0>]}
+[0m16:28:58.928591 [info ] [Thread-1 (]: 5 of 7 OK created sql table model TEAM_01.PIZZA_ORDER_ITEM_TOPPINGS ............ [[32mSUCCESS 1[0m in 0.72s]
+[0m16:28:58.929783 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS
+[0m16:28:58.930879 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.add_timezone
+[0m16:28:58.932144 [info ] [Thread-1 (]: 6 of 7 START sql view model TEAM_01.add_timezone ............................... [RUN]
+[0m16:28:58.933622 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS, now model.Revolt_BI_Hackathon.add_timezone)
+[0m16:28:58.934452 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.add_timezone
+[0m16:28:58.937287 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.add_timezone"
+[0m16:28:58.938445 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.add_timezone (compile): 16:28:58.934926 => 16:28:58.937727
+[0m16:28:58.939142 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.add_timezone
+[0m16:28:58.964668 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.add_timezone"
+[0m16:28:58.965760 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.add_timezone"
+[0m16:28:58.966424 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.add_timezone: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.add_timezone"} */
+create or replace   view "HACKATHON"."TEAM_01"."add_timezone"
+  
+   as (
+    
+  );
+[0m16:28:58.967031 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:28:59.180307 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01b431bc-0202-a847-0002-461e001799a6
+[0m16:28:59.181051 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 5 at position 2 unexpected ')'.
+[0m16:28:59.181958 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.add_timezone (execute): 16:28:58.939581 => 16:28:59.181613
+[0m16:28:59.182592 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.add_timezone: Close
+[0m16:28:59.247597 [debug] [Thread-1 (]: Database Error in model add_timezone (models/add_timezone.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 2 unexpected ')'.
+  compiled Code at target/run/Revolt_BI_Hackathon/models/add_timezone.sql
+[0m16:28:59.248373 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4bfe5ac8-07e3-4ab6-8a7c-6b67dc5f2f48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f911b6e7050>]}
+[0m16:28:59.249216 [error] [Thread-1 (]: 6 of 7 ERROR creating sql view model TEAM_01.add_timezone ...................... [[31mERROR[0m in 0.32s]
+[0m16:28:59.250412 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.add_timezone
+[0m16:28:59.251522 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.currency_check
+[0m16:28:59.253427 [info ] [Thread-1 (]: 7 of 7 START sql view model TEAM_01.currency_check ............................. [RUN]
+[0m16:28:59.254793 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.add_timezone, now model.Revolt_BI_Hackathon.currency_check)
+[0m16:28:59.255480 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.currency_check
+[0m16:28:59.260134 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.currency_check"
+[0m16:28:59.261315 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.currency_check (compile): 16:28:59.255912 => 16:28:59.260988
+[0m16:28:59.261898 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.currency_check
+[0m16:28:59.265111 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.currency_check"
+[0m16:28:59.266397 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.currency_check"
+[0m16:28:59.267074 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.currency_check: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.currency_check"} */
+create or replace   view "HACKATHON"."TEAM_01"."currency_check"
+  
+   as (
+    
+  );
+[0m16:28:59.267687 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:28:59.466126 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01b431bc-0202-a847-0002-461e001799aa
+[0m16:28:59.466957 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 5 at position 2 unexpected ')'.
+[0m16:28:59.467889 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.currency_check (execute): 16:28:59.262280 => 16:28:59.467548
+[0m16:28:59.468518 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.currency_check: Close
+[0m16:28:59.533743 [debug] [Thread-1 (]: Database Error in model currency_check (models/currency_check.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 2 unexpected ')'.
+  compiled Code at target/run/Revolt_BI_Hackathon/models/currency_check.sql
+[0m16:28:59.534629 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4bfe5ac8-07e3-4ab6-8a7c-6b67dc5f2f48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f911b6be8a0>]}
+[0m16:28:59.535602 [error] [Thread-1 (]: 7 of 7 ERROR creating sql view model TEAM_01.currency_check .................... [[31mERROR[0m in 0.28s]
+[0m16:28:59.536534 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.currency_check
+[0m16:28:59.539229 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:28:59.539861 [debug] [MainThread]: Connection 'model.Revolt_BI_Hackathon.currency_check' was properly closed.
+[0m16:28:59.540477 [info ] [MainThread]: 
+[0m16:28:59.541116 [info ] [MainThread]: Finished running 5 table models, 2 view models in 0 hours 0 minutes and 5.49 seconds (5.49s).
+[0m16:28:59.543243 [debug] [MainThread]: Command end result
+[0m16:28:59.551432 [info ] [MainThread]: 
+[0m16:28:59.552164 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m16:28:59.552747 [info ] [MainThread]: 
+[0m16:28:59.553323 [error] [MainThread]:   Database Error in model add_timezone (models/add_timezone.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 2 unexpected ')'.
+  compiled Code at target/run/Revolt_BI_Hackathon/models/add_timezone.sql
+[0m16:28:59.553887 [info ] [MainThread]: 
+[0m16:28:59.554454 [error] [MainThread]:   Database Error in model currency_check (models/currency_check.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 2 unexpected ')'.
+  compiled Code at target/run/Revolt_BI_Hackathon/models/currency_check.sql
+[0m16:28:59.555057 [info ] [MainThread]: 
+[0m16:28:59.555657 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=2 SKIP=0 TOTAL=7
+[0m16:28:59.556960 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 6.6350904, "process_user_time": 3.851727, "process_kernel_time": 0.651277, "process_mem_max_rss": "200448", "process_out_blocks": "1976", "command_success": false, "process_in_blocks": "0"}
+[0m16:28:59.557803 [debug] [MainThread]: Command `dbt run` failed at 16:28:59.557564 after 6.64 seconds
+[0m16:28:59.558436 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9153a499d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f91203b9c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f91519d7110>]}
+[0m16:28:59.559174 [debug] [MainThread]: Flushing usage events
+[0m16:29:06.692137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f221760a060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2218408440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2217aa7050>]}
+
+
+============================== 16:29:06.695448 | 1be7030e-dcb2-46f1-84dc-49724575f6e9 ==============================
+[0m16:29:06.695448 [info ] [MainThread]: Running with dbt=1.7.14
+[0m16:29:06.696210 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/workspace/DBT-Hackathon-2024', 'debug': 'False', 'warn_error': 'None', 'log_path': '/workspace/DBT-Hackathon-2024/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt init', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:29:06.698967 [info ] [MainThread]: Setting up your profile.
+[0m16:29:18.496807 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 11.853991, "process_user_time": 2.352735, "process_kernel_time": 0.124038, "process_mem_max_rss": "94536", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m16:29:18.497928 [debug] [MainThread]: Command `dbt init` succeeded at 16:29:18.497705 after 11.86 seconds
+[0m16:29:18.498571 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2217cba720>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2217bc63c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2217a3e420>]}
+[0m16:29:18.499453 [debug] [MainThread]: Flushing usage events
+[0m16:29:25.207570 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2875d831a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f28762d7aa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f28762d7920>]}
+
+
+============================== 16:29:25.211203 | 24a134e9-3c3f-4666-a50a-4d5837d8a20a ==============================
+[0m16:29:25.211203 [info ] [MainThread]: Running with dbt=1.7.14
+[0m16:29:25.212060 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/workspace/DBT-Hackathon-2024', 'log_path': '/workspace/DBT-Hackathon-2024/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:29:26.092006 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '24a134e9-3c3f-4666-a50a-4d5837d8a20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2845ffde80>]}
+[0m16:29:26.160788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '24a134e9-3c3f-4666-a50a-4d5837d8a20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f28447d5100>]}
+[0m16:29:26.161744 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m16:29:26.169821 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m16:29:26.196479 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:29:26.197065 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:29:26.203590 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '24a134e9-3c3f-4666-a50a-4d5837d8a20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2844bba6f0>]}
+[0m16:29:26.212667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '24a134e9-3c3f-4666-a50a-4d5837d8a20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2844852b70>]}
+[0m16:29:26.213362 [info ] [MainThread]: Found 7 models, 5 sources, 0 exposures, 0 metrics, 432 macros, 0 groups, 0 semantic models
+[0m16:29:26.213976 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '24a134e9-3c3f-4666-a50a-4d5837d8a20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f28457ea240>]}
+[0m16:29:26.216425 [info ] [MainThread]: 
+[0m16:29:26.217484 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:29:26.219330 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_HACKATHON'
+[0m16:29:26.235518 [debug] [ThreadPool]: Using snowflake connection "list_HACKATHON"
+[0m16:29:26.236158 [debug] [ThreadPool]: On list_HACKATHON: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "connection_name": "list_HACKATHON"} */
+show terse schemas in database "HACKATHON"
+    limit 10000
+[0m16:29:26.236755 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:29:26.603597 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.0 seconds
+[0m16:29:26.605856 [debug] [ThreadPool]: On list_HACKATHON: Close
+[0m16:29:26.666987 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_HACKATHON, now list_HACKATHON_TEAM_01)
+[0m16:29:26.677452 [debug] [ThreadPool]: Using snowflake connection "list_HACKATHON_TEAM_01"
+[0m16:29:26.678165 [debug] [ThreadPool]: On list_HACKATHON_TEAM_01: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "connection_name": "list_HACKATHON_TEAM_01"} */
+show terse objects in "HACKATHON"."TEAM_01" limit 10000
+[0m16:29:26.678768 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:29:27.020185 [debug] [ThreadPool]: SQL status: SUCCESS 14 in 0.0 seconds
+[0m16:29:27.022688 [debug] [ThreadPool]: On list_HACKATHON_TEAM_01: Close
+[0m16:29:27.094073 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '24a134e9-3c3f-4666-a50a-4d5837d8a20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2844933260>]}
+[0m16:29:27.095276 [info ] [MainThread]: Concurrency: 1 threads (target='Snowflake_DB')
+[0m16:29:27.095897 [info ] [MainThread]: 
+[0m16:29:27.098967 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS
+[0m16:29:27.100143 [info ] [Thread-1 (]: 1 of 7 START sql table model TEAM_01.PIZZA_CUSTOMERS ........................... [RUN]
+[0m16:29:27.101226 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_HACKATHON_TEAM_01, now model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS)
+[0m16:29:27.101872 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS
+[0m16:29:27.116357 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS"
+[0m16:29:27.117422 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS (compile): 16:29:27.102278 => 16:29:27.117017
+[0m16:29:27.118054 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS
+[0m16:29:27.154873 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS"
+[0m16:29:27.156109 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS"
+[0m16:29:27.156942 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_CUSTOMERS"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:29:27.157599 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:29:27.959534 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:29:27.986539 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS (execute): 16:29:27.118450 => 16:29:27.986158
+[0m16:29:27.987309 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS: Close
+[0m16:29:28.056355 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '24a134e9-3c3f-4666-a50a-4d5837d8a20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2846958b60>]}
+[0m16:29:28.057393 [info ] [Thread-1 (]: 1 of 7 OK created sql table model TEAM_01.PIZZA_CUSTOMERS ...................... [[32mSUCCESS 1[0m in 0.96s]
+[0m16:29:28.058596 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS
+[0m16:29:28.059741 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES
+[0m16:29:28.060940 [info ] [Thread-1 (]: 2 of 7 START sql table model TEAM_01.PIZZA_MARKETING_EXPENDITURES .............. [RUN]
+[0m16:29:28.062446 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_CUSTOMERS, now model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES)
+[0m16:29:28.063319 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES
+[0m16:29:28.067021 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES"
+[0m16:29:28.068079 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES (compile): 16:29:28.063760 => 16:29:28.067684
+[0m16:29:28.068747 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES
+[0m16:29:28.072040 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES"
+[0m16:29:28.073182 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES"
+[0m16:29:28.076212 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_MARKETING_EXPENDITURES"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:29:28.077068 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:29:28.813176 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:29:28.816570 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES (execute): 16:29:28.069153 => 16:29:28.816229
+[0m16:29:28.817229 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES: Close
+[0m16:29:28.877990 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '24a134e9-3c3f-4666-a50a-4d5837d8a20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2844480ef0>]}
+[0m16:29:28.879042 [info ] [Thread-1 (]: 2 of 7 OK created sql table model TEAM_01.PIZZA_MARKETING_EXPENDITURES ......... [[32mSUCCESS 1[0m in 0.82s]
+[0m16:29:28.880004 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES
+[0m16:29:28.880716 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_ORDERS
+[0m16:29:28.881641 [info ] [Thread-1 (]: 3 of 7 START sql table model TEAM_01.PIZZA_ORDERS .............................. [RUN]
+[0m16:29:28.882617 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_MARKETING_EXPENDITURES, now model.Revolt_BI_Hackathon.PIZZA_ORDERS)
+[0m16:29:28.883272 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_ORDERS
+[0m16:29:28.887083 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_ORDERS"
+[0m16:29:28.888117 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDERS (compile): 16:29:28.883675 => 16:29:28.887734
+[0m16:29:28.888717 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_ORDERS
+[0m16:29:28.891721 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_ORDERS"
+[0m16:29:28.892799 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_ORDERS"
+[0m16:29:28.893435 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDERS: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_ORDERS"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_ORDERS"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:29:28.894037 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:29:29.581982 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:29:29.585545 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDERS (execute): 16:29:28.889114 => 16:29:29.585196
+[0m16:29:29.586282 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDERS: Close
+[0m16:29:29.648590 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '24a134e9-3c3f-4666-a50a-4d5837d8a20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2844480440>]}
+[0m16:29:29.649661 [info ] [Thread-1 (]: 3 of 7 OK created sql table model TEAM_01.PIZZA_ORDERS ......................... [[32mSUCCESS 1[0m in 0.77s]
+[0m16:29:29.650670 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_ORDERS
+[0m16:29:29.651439 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS
+[0m16:29:29.652308 [info ] [Thread-1 (]: 4 of 7 START sql table model TEAM_01.PIZZA_ORDER_ITEMS ......................... [RUN]
+[0m16:29:29.653297 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_ORDERS, now model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS)
+[0m16:29:29.653921 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS
+[0m16:29:29.657856 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS"
+[0m16:29:29.658926 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS (compile): 16:29:29.654322 => 16:29:29.658522
+[0m16:29:29.659548 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS
+[0m16:29:29.662612 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS"
+[0m16:29:29.663726 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS"
+[0m16:29:29.664351 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_ORDER_ITEMS"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:29:29.664963 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:29:30.288523 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:29:30.291932 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS (execute): 16:29:29.659943 => 16:29:30.291591
+[0m16:29:30.292622 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS: Close
+[0m16:29:30.347648 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '24a134e9-3c3f-4666-a50a-4d5837d8a20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2844633680>]}
+[0m16:29:30.348689 [info ] [Thread-1 (]: 4 of 7 OK created sql table model TEAM_01.PIZZA_ORDER_ITEMS .................... [[32mSUCCESS 1[0m in 0.69s]
+[0m16:29:30.349652 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS
+[0m16:29:30.350364 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS
+[0m16:29:30.351227 [info ] [Thread-1 (]: 5 of 7 START sql table model TEAM_01.PIZZA_ORDER_ITEM_TOPPINGS ................. [RUN]
+[0m16:29:30.352221 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEMS, now model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS)
+[0m16:29:30.352842 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS
+[0m16:29:30.356844 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS"
+[0m16:29:30.357925 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS (compile): 16:29:30.353250 => 16:29:30.357516
+[0m16:29:30.358552 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS
+[0m16:29:30.361606 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS"
+[0m16:29:30.362739 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS"
+[0m16:29:30.363386 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS"} */
+create or replace transient table "HACKATHON"."TEAM_01"."PIZZA_ORDER_ITEM_TOPPINGS"
+         as
+        (
+
+    
+        select 'No columns present in the table' as error_message
+        );
+[0m16:29:30.363989 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:29:30.989128 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:29:30.992434 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS (execute): 16:29:30.359019 => 16:29:30.992093
+[0m16:29:30.993093 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS: Close
+[0m16:29:31.054497 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '24a134e9-3c3f-4666-a50a-4d5837d8a20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f28444d7d70>]}
+[0m16:29:31.055590 [info ] [Thread-1 (]: 5 of 7 OK created sql table model TEAM_01.PIZZA_ORDER_ITEM_TOPPINGS ............ [[32mSUCCESS 1[0m in 0.70s]
+[0m16:29:31.056575 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS
+[0m16:29:31.057278 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.add_timezone
+[0m16:29:31.058116 [info ] [Thread-1 (]: 6 of 7 START sql view model TEAM_01.add_timezone ............................... [RUN]
+[0m16:29:31.059174 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.PIZZA_ORDER_ITEM_TOPPINGS, now model.Revolt_BI_Hackathon.add_timezone)
+[0m16:29:31.059829 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.add_timezone
+[0m16:29:31.062597 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.add_timezone"
+[0m16:29:31.064133 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.add_timezone (compile): 16:29:31.060234 => 16:29:31.063340
+[0m16:29:31.064853 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.add_timezone
+[0m16:29:31.091534 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.add_timezone"
+[0m16:29:31.092700 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.add_timezone"
+[0m16:29:31.093335 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.add_timezone: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.add_timezone"} */
+create or replace   view "HACKATHON"."TEAM_01"."add_timezone"
+  
+   as (
+    
+  );
+[0m16:29:31.093928 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:29:31.279301 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01b431bd-0202-a835-0002-461e00175d1e
+[0m16:29:31.280110 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 5 at position 2 unexpected ')'.
+[0m16:29:31.281066 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.add_timezone (execute): 16:29:31.065255 => 16:29:31.280710
+[0m16:29:31.281708 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.add_timezone: Close
+[0m16:29:31.348724 [debug] [Thread-1 (]: Database Error in model add_timezone (models/add_timezone.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 2 unexpected ')'.
+  compiled Code at target/run/Revolt_BI_Hackathon/models/add_timezone.sql
+[0m16:29:31.349708 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '24a134e9-3c3f-4666-a50a-4d5837d8a20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2875d80b00>]}
+[0m16:29:31.350826 [error] [Thread-1 (]: 6 of 7 ERROR creating sql view model TEAM_01.add_timezone ...................... [[31mERROR[0m in 0.29s]
+[0m16:29:31.351850 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.add_timezone
+[0m16:29:31.352655 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.currency_check
+[0m16:29:31.354542 [info ] [Thread-1 (]: 7 of 7 START sql view model TEAM_01.currency_check ............................. [RUN]
+[0m16:29:31.355857 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.add_timezone, now model.Revolt_BI_Hackathon.currency_check)
+[0m16:29:31.356506 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.currency_check
+[0m16:29:31.361325 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.currency_check"
+[0m16:29:31.362105 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.currency_check (compile): 16:29:31.356906 => 16:29:31.361780
+[0m16:29:31.362757 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.currency_check
+[0m16:29:31.366152 [debug] [Thread-1 (]: Writing runtime sql for node "model.Revolt_BI_Hackathon.currency_check"
+[0m16:29:31.367287 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.currency_check"
+[0m16:29:31.367925 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.currency_check: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.currency_check"} */
+create or replace   view "HACKATHON"."TEAM_01"."currency_check"
+  
+   as (
+    
+  );
+[0m16:29:31.368526 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:29:31.638105 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01b431bd-0202-a849-0002-461e00178a86
+[0m16:29:31.638965 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 5 at position 2 unexpected ')'.
+[0m16:29:31.639897 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.currency_check (execute): 16:29:31.363167 => 16:29:31.639557
+[0m16:29:31.640538 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.currency_check: Close
+[0m16:29:31.703350 [debug] [Thread-1 (]: Database Error in model currency_check (models/currency_check.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 2 unexpected ')'.
+  compiled Code at target/run/Revolt_BI_Hackathon/models/currency_check.sql
+[0m16:29:31.704084 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '24a134e9-3c3f-4666-a50a-4d5837d8a20a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f28444eab40>]}
+[0m16:29:31.704943 [error] [Thread-1 (]: 7 of 7 ERROR creating sql view model TEAM_01.currency_check .................... [[31mERROR[0m in 0.35s]
+[0m16:29:31.705836 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.currency_check
+[0m16:29:31.708356 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:29:31.708955 [debug] [MainThread]: Connection 'model.Revolt_BI_Hackathon.currency_check' was properly closed.
+[0m16:29:31.709635 [info ] [MainThread]: 
+[0m16:29:31.710297 [info ] [MainThread]: Finished running 5 table models, 2 view models in 0 hours 0 minutes and 5.49 seconds (5.49s).
+[0m16:29:31.712284 [debug] [MainThread]: Command end result
+[0m16:29:31.720100 [info ] [MainThread]: 
+[0m16:29:31.720815 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m16:29:31.721432 [info ] [MainThread]: 
+[0m16:29:31.722057 [error] [MainThread]:   Database Error in model add_timezone (models/add_timezone.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 2 unexpected ')'.
+  compiled Code at target/run/Revolt_BI_Hackathon/models/add_timezone.sql
+[0m16:29:31.722638 [info ] [MainThread]: 
+[0m16:29:31.723316 [error] [MainThread]:   Database Error in model currency_check (models/currency_check.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 2 unexpected ')'.
+  compiled Code at target/run/Revolt_BI_Hackathon/models/currency_check.sql
+[0m16:29:31.723900 [info ] [MainThread]: 
+[0m16:29:31.724547 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=2 SKIP=0 TOTAL=7
+[0m16:29:31.725751 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 6.5672116, "process_user_time": 3.836011, "process_kernel_time": 0.655318, "process_mem_max_rss": "200760", "process_out_blocks": "1976", "command_success": false, "process_in_blocks": "0"}
+[0m16:29:31.726633 [debug] [MainThread]: Command `dbt run` failed at 16:29:31.726411 after 6.57 seconds
+[0m16:29:31.727382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2877f2db50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2845f3f9b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2876dd0ce0>]}
+[0m16:29:31.727996 [debug] [MainThread]: Flushing usage events
